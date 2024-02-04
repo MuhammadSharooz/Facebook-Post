@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    color: #fff;
+}
+
+.facebookCard {
+    height: 450px;
+    width: 500px;
+    border-radius: .5rem;
+    overflow: hidden;
+    background-color: rgb(50, 50, 50)
+}
+
+.cardHeader {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 900px;
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.386);
+}
+
+.row1 {
+    display: flex;
+    padding-left: 1.4em;
+    gap: .5rem;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.userProfile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    background-color: #ffffff13;
+}
+
+.userProfile img {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.column {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.public {
+    height: 25px;
+    width: 80px;
+    border-radius: .3rem;
+    background-color: rgb(79, 79, 79);
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.public i {
+    font-size: 14px;
+}
+
+.row2 {
+    height: 50px;
+    display: flex;
+    width: 100%;
+    padding-left: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.inputText {
+    height: 100%;
+    width: 90%;
+}
+
+.inputText textarea {
+    height: 100% !important;
+    width: 100% !important;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.inputText textarea::placeholder {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.row2 i {
+    font-size: 1.7rem;
+    color: gray;
+    margin-right: 1.4rem;
+
+}
+
+.row3 {
+    height: 140px;
+    border-radius: .4rem;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.616);
+    width: 90%;
+    margin-left: 1.5rem;
+    position: relative;
+}
+
+.row3:hover {
+    background-color: rgba(108, 108, 108, 0.769);
+    cursor: pointer;
+}
+
+.choicefile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+
+}
+
+.close {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(64, 64, 68, 0.565);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50rem;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    color: rgb(146, 146, 146);
+}
+
+.choicefile .images {
+    height: 40px;
+    overflow: hidden;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(64, 64, 68);
+}
+
+.row4 {
+    margin: 1rem 1.5rem;
+    height: 40px;
+    border-radius: .3rem;
+    overflow: hidden;
+    border: 1px solid rgba(128, 128, 128, 0.831);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1rem;
+}
+
+.abcimage {
+    margin-right: 1rem;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.image1 {
+    cursor: pointer;
+}
+
+.row5 {
+    width: 80%;
+    margin-left: 3rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.column1 {
+    width: 90%;
+    margin: .3rem 1.5rem;
+    border: 1px solid gray;
+    border-radius: .3rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: .5rem;
+    gap: 2rem;
+}
+
+.column1 .box1 {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50rem;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.column1 .box1 input {
+    border: none;
+}
+
+.fontsize input {
+    width: 40px;
+    outline: none;
+}
+
+.column2 {
+    width: 90%;
+    margin: .3rem 1.5rem;
+    border: 1px solid gray;
+    border-radius: .3rem;
+    height: 40px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.column2 .box {
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: .3rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.column2 .box img {
+    height: 100%;
+    width: 100%;
+}
+
+.cent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.post {
+    border: none;
+    background-color: rgba(87, 88, 91, 0.629);
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    border-radius: .5rem;
+    color: rgb(186, 186, 186);
+    font-size: 15px;
+}
+
+.post:hover {
+    background-color: rgb(108, 108, 108);
+    cursor: pointer;
+}
+
+button:active {
+    border: 1px solid white;
+}
+
+#row6 {
+    width: 90%;
+    margin: 0px 1.5rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.558);
+}
+
+#row6 .btn {
+    border: none;
+    height: 30px;
+    background-color: transparent;
+    width: 130px;
+    font-size: 17px;
+    border-radius: .3rem;
+    color: #fff;
+}
+
+#row6 .btn:hover {
+    background-color: rgba(84, 83, 83, 0.741);
+    cursor: pointer;
+}
+
+.emptyspace {
+    height: 36px;
+    width: 85%;
+    margin: .4rem 1.5rem 0px 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.space1 {
+    height: 100%;
+    width: 130px;
+    align-items: center;
+    display: flex;
+    
+}
+#shareSpace{
+    color: rgb(105, 103, 103);
+    gap: 4px;
+}
+#footer{
+    display: none;
+}

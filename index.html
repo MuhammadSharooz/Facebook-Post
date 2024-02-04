@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Facebook Post</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="facebookCard">
+            <div class="cardHeader">
+                <div>Create post</div>
+            </div>
+            <div class="cardBody">
+                <div class="row1">
+                    <div class="userProfile"><img src="./images/Screenshot_20220608-203813~3.jpg" alt=""></div>
+                    <div class="column">
+                        <div class="userName">Md Sharyar</div>
+                        <div class="public"><i class="fa-solid fa-earth-americas"></i>Public</div>
+                    </div>
+                </div>
+                <div class="row2" id="row2">
+                    <div class="inputText">
+                        <textarea name="" id="inputText" cols="55" rows="2"
+                            placeholder="What's on your mind?"></textarea>
+                    </div>
+                    <div><i id="hidden" class="fa-regular fa-face-smile"></i></div>
+
+                </div>
+                <div class="row3">
+                    <div class="close" title="close"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="choicefile" id="choicefile">
+                        <div class="images"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+                        <div class="name">Add Photos/Videos</div>
+                    </div>
+                </div>
+                <div class="hidden">
+                    <div class="column1">
+                        <div class="cent">
+                            <div class="box1"><input type="color" id="textcolor"></div>
+                            <span>Text color</span>
+                        </div>
+                        <div class="fontsize"><input type="number" value="16" name="" id=""></div>
+                        <div class="bold" onclick="bold()"><i class="fa-solid fa-bold"></i></div>
+                        <div class="italic"><i class="fa-solid fa-italic"></i></div>
+                        <div class="underline" onclick="changestyle()"><i class="fa-solid fa-underline"></i></div>
+                        <div class="textdelet" onclick="deleteText()"><i class="fa-solid fa-text-slash"></i></div>
+                        <div class="cent">
+                            <div class="box1"><input onchange="changeBackground()" type="color" name="" id=""></div>
+                            <span>bg color</span>
+                        </div>
+
+                    </div>
+                    <div class="column2">
+                        <div class="box"><img onclick="setbackground()" src="./images/Untitled.jpg" alt=""></div>
+                        <div class="box"><img onclick="setbackground()" src="./images/h2.jpg" alt=""></div>
+                        <div class="box"><img onclick="setbackground()" src="./images/hh.jpg" alt=""></div>
+                        <div class="box"><img onclick="setbackground()" src="./images/hu.jpg" alt=""></div>
+                        <div class="box"><img onclick="setbackground()" src="./images/weew.jpg" alt=""></div>
+                        <div class="box"><img onclick="setbackground()" src="./images/ye.jpg" alt=""></div>
+                        <div class="box"><img onclick="setbackground()" src="./images/ywe.jpg" alt=""></div>
+                        <div class="box"><img onclick="setbackground()" src="./images/ji.jpg" alt=""></div>
+                        <div class="box"><img onclick="setbackground()" src="./images/1.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="row4">
+                    <p>Add to your post</p>
+                    <div class="abcimage">
+                        <div class="image1"><img onclick="upload()" src="./images/Ivw7nhRtXyo.png" alt=""></div>
+                        <div class="image1"><img src="./images/b37mHA1PjfK.png" alt=""></div>
+                        <div class="image1"><img src="./images/Y4mYLVOhTwq.png" alt=""></div>
+                        <div class="image1"><img src="./images/8zlaieBcZ72.png" alt=""></div>
+                    </div>
+
+                </div>
+                <div class="row5">
+                    <button class="post" onclick="post()">Post</button>
+                </div>
+                <div id="footer">
+                    <div class="emptyspace">
+                        <div id="likeSpace" class="space1"></div>
+                        <div id="commentSpace" class="space1"></div>
+                        <div id="shareSpace" class="space1"></div>
+                    </div>
+                    <div id="row6">
+                        <button id="likebtn" class="btn"><span><i class="fa-regular fa-thumbs-up"></i></span>
+                            Like</button>
+                        <button id="commentbtn" class="btn"><span><i class="fa-regular fa-comment"></i></span>
+                            Comment</button>
+                        <button id="sharebtn" class="btn"><span><i class='bx bx-share bx-flip-horizontal'></i></span>
+                            Share</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
