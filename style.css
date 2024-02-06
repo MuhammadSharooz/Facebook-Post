@@ -47,6 +47,7 @@ body {
     padding-left: 1.4em;
     gap: .5rem;
     margin: 10px 0px;
+    position: relative;
     align-items: center;
 }
 
@@ -59,6 +60,42 @@ body {
     display: flex;
     overflow: hidden;
     background-color: #ffffff13;
+}
+
+.xmark {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50rem;
+    color: #fff;
+    /* position: absolute;
+    right: 1.5rem;
+    cursor: pointer; */
+    background-color: rgb(76, 75, 75);
+}
+
+.right {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 1.5rem;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.ellipsis{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ellipsis:hover {
+    border-radius: 50rem;
+    background-color: rgb(76, 75, 75);
 }
 
 .userProfile img {
@@ -112,7 +149,22 @@ body {
     color: #fff;
     background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
 
+}
+
+.inputText textarea::-webkit-scrollbar {
+    background-color: transparent;
+    width: 12px;
+    cursor: pointer;
+
+}
+
+.inputText textarea:hover::-webkit-scrollbar-thumb {
+    background: linear-gradient(orange, rgb(225, 58, 86), purple, rgb(58, 58, 250));
+    border-radius: 50rem;
 }
 
 .inputText textarea::placeholder {
@@ -181,6 +233,15 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(64, 64, 68);
+}
+
+.textalign {
+    display: none;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    font-size: 20px;
+
 }
 
 .row4 {
@@ -308,8 +369,9 @@ p {
     cursor: pointer;
 }
 
-button:active {
+.post:active {
     border: 1px solid white;
+    background-color: blue;
 }
 
 #row6 {
@@ -353,12 +415,14 @@ button:active {
     width: 130px;
     align-items: center;
     display: flex;
-    
+
 }
-#shareSpace{
+
+#shareSpace {
     color: rgb(105, 103, 103);
     gap: 4px;
 }
-#footer{
+
+#footer {
     display: none;
 }

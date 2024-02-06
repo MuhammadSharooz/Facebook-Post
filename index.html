@@ -18,13 +18,18 @@
             <div class="cardHeader">
                 <div>Create post</div>
             </div>
-            <div class="cardBody">
+            <div class="cardBody"> 
                 <div class="row1">
                     <div class="userProfile"><img src="./images/Screenshot_20220608-203813~3.jpg" alt=""></div>
                     <div class="column">
                         <div class="userName">Md Sharyar</div>
                         <div class="public"><i class="fa-solid fa-earth-americas"></i>Public</div>
                     </div>
+                    <div class="right">
+                    <div class="ellipsis"><i class="fa-solid fa-ellipsis"></i></div>  
+                    <div class="xmark"><i class='bx bx-x'></i></div>
+                    </div>
+                   
                 </div>
                 <div class="row2" id="row2">
                     <div class="inputText">
@@ -45,7 +50,7 @@
                     <div class="column1">
                         <div class="cent">
                             <div class="box1"><input type="color" id="textcolor"></div>
-                            <span>Text color</span>
+                            <span>Text Color</span>
                         </div>
                         <div class="fontsize"><input type="number" value="16" name="" id=""></div>
                         <div class="bold" onclick="bold()"><i class="fa-solid fa-bold"></i></div>
@@ -54,7 +59,7 @@
                         <div class="textdelet" onclick="deleteText()"><i class="fa-solid fa-text-slash"></i></div>
                         <div class="cent">
                             <div class="box1"><input onchange="changeBackground()" type="color" name="" id=""></div>
-                            <span>bg color</span>
+                            <span>Bg Color</span>
                         </div>
 
                     </div>
@@ -73,10 +78,18 @@
                 <div class="row4">
                     <p>Add to your post</p>
                     <div class="abcimage">
-                        <div class="image1"><img onclick="upload()" src="./images/Ivw7nhRtXyo.png" alt=""></div>
-                        <div class="image1"><img src="./images/b37mHA1PjfK.png" alt=""></div>
-                        <div class="image1"><img src="./images/Y4mYLVOhTwq.png" alt=""></div>
-                        <div class="image1"><img src="./images/8zlaieBcZ72.png" alt=""></div>
+                        <div class="image1"><img onclick="upload()" src="./images/Ivw7nhRtXyo.png" title="Photo/video" alt=""></div>
+                        <div class="image1"><img src="./images/b37mHA1PjfK.png" title="Tag people"  alt=""></div>
+                        <div class="image1"><img src="./images/Y4mYLVOhTwq.png" title="felling"  alt=""></div>
+                        <div class="image1"><img src="./images/8zlaieBcZ72.png" title="Check in" alt=""></div>
+                        <div class="textalign">
+                        <div class="image1"><i class="fa-solid fa-align-left" onclick="left()" title="left"></i></div>
+                        <div class="image1" ><i class="fa-solid fa-align-center" onclick="center()" title="center"></i></div>
+                        <div class="image1"><i class="fa-solid fa-align-right"  onclick="right()" title="right"></i></div>
+                        <div class="image1"><i class="fa-solid fa-align-justify"  onclick="justify()" title="justify"></i></div>
+                        </div>
+                       
+                        
                     </div>
 
                 </div>
